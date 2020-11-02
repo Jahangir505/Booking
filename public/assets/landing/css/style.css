@@ -1,0 +1,2584 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body h1, body h2, body h4, body h5, body h6, body p {
+  font-family: 'Roboto', sans-serif;
+}
+
+body img {
+  max-width: 100%;
+}
+
+body p {
+  color: #7f909d;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.gray {
+  color: #7f909d !important;
+}
+
+.orcl {
+  color: #fb774e;
+}
+
+.btn-tvl {
+  background: #0873c5;
+  border: 0;
+  border: 1px solid #0873c5;
+  border-radius: 0;
+  color: white;
+}
+
+.btn-tvl:hover {
+  background: #085c9c;
+  color: white;
+}
+
+.btn-orange {
+  background: #fb774e;
+  border: 0;
+  border: 1px solid #fb774e;
+  border-radius: 0;
+  color: white;
+}
+
+.btn-orange:hover {
+  background-color: #ff4800;
+  color: white;
+}
+
+.form-control {
+  border-radius: 0;
+  border-color: #e4e4e4;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #0873c5;
+}
+
+.input-group-text {
+  color: #bfc7ce;
+  background-color: #ffffff;
+  border: 1px solid #e4e4e4;
+  border-radius: 0;
+}
+
+form label {
+  font-size: 14px;
+  color: #41596c;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.titleArea {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.titleArea .title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.titleArea p {
+  font-size: 20px;
+  color: #7f909d;
+  font-weight: 400;
+}
+
+.titleArea.text-light .title {
+  font-weight: 300;
+  color: #00213b !important;
+}
+
+.subTitle {
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 26px;
+}
+
+.productDetailstitle {
+  font-size: 22px;
+  font-weight: 900;
+  color: #264258;
+  margin-bottom: 20px;
+}
+
+.breadcrumb {
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.breadcrumb i {
+  color: #bfc7ce;
+  font-size: 12px;
+}
+
+.breadcrumb li {
+  font-size: 13px;
+}
+
+.breadcrumb a {
+  display: inline-block;
+  padding-right: 10px;
+  font-weight: 500;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: none;
+}
+
+.pagination {
+  margin: 25px 0;
+}
+
+.pagination .page-link {
+  position: relative;
+  display: block;
+  padding: .2rem .4rem;
+  margin-left: -1px;
+  line-height: normal;
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid white;
+  font-size: 12px;
+  margin: 0 8px;
+}
+
+.card {
+  border-radius: 0 !important;
+  border: 1px solid #e5e9eb;
+  margin-bottom: 35px;
+}
+
+.card .card-header,
+.card .card-footer {
+  padding: .4rem 1.25rem;
+  background-color: #efefef;
+  border-color: #e5e9eb;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 0 !important;
+  color: #00213b !important;
+}
+
+.card .card-body h4 {
+  color: #fb774e;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card .card-body p {
+  font-size: 13px;
+  color: #00213b;
+}
+
+.card .card-body ul {
+  padding: 0;
+}
+
+.card .card-body ul li {
+  list-style: none;
+  font-size: 13px;
+  color: #7f909d;
+  margin: 8px 0;
+  position: relative;
+  background: url(../images/arrow.png) no-repeat left center;
+  background-size: 7px 12px;
+  padding-left: 14px;
+}
+
+.card .card-body label {
+  font-size: 14px;
+  color: #41596c;
+  font-weight: 500;
+}
+
+.form-control.code {
+  width: 80px;
+}
+
+header {
+  border-bottom: 3px solid #fb774e;
+}
+
+header .topHeader {
+  padding: 10px 0;
+  background: white;
+}
+
+header .topHeader .navbar-brand {
+  width: 150px;
+}
+
+header .topHeader .pull-right .btn-group {
+  border: 0;
+}
+
+header .topHeader .pull-right .btn-group .dropdown-toggle {
+  border: 1px solid #e1e1e1;
+  position: relative;
+  z-index: 100000000;
+}
+
+header .topHeader .pull-right .btn-group .dropdown-toggle.active {
+  border-bottom: 1px solid white;
+}
+
+header .topHeader .pull-right .btn-group .dropdown-menu.show {
+  display: block;
+  top: 120% !important;
+  left: auto !important;
+  right: 0;
+  -webkit-transform: translate3d(0px, -10px, 0px) !important;
+          transform: translate3d(0px, -10px, 0px) !important;
+  border-radius: 0;
+}
+
+header .topHeader .pull-right .btn-group .dropdown-menu.show form {
+  min-width: 330px;
+  padding: 15px;
+}
+
+header .topHeader .pull-right .btn-group .dropdown-menu.show form h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+header .topHeader .pull-right .btn-group .dropdown-menu.show form a {
+  font-size: 14px;
+}
+
+header .topHeader .pull-right .btn-group .dropdown-menu.show form .custom-control-label::before,
+header .topHeader .pull-right .btn-group .dropdown-menu.show form .custom-control-label::after {
+  top: .1rem;
+}
+
+header .topHeader .pull-right .btn-group .dropdown-menu.flag-container {
+  min-width: auto;
+}
+
+header .topHeader .pull-right .btn-group .dropdown-menu.flag-container a {
+  padding: 0 15px;
+}
+
+header .topHeader .navbar-toggler {
+  display: none;
+}
+
+header .mainmenu {
+  padding-bottom: 0;
+  padding-top: 0;
+  background: #0873c5;
+}
+
+header .mainmenu .navbar-collapse .main-nav-link li a {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 13px 15px;
+  border-right: 1px solid #53a4dc;
+}
+
+header .mainmenu .navbar-collapse .main-nav-link li a i {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+header .mainmenu .navbar-collapse .main-nav-link li a:hover, header .mainmenu .navbar-collapse .main-nav-link li a.active {
+  color: white;
+  background: #fb774e;
+  border-right: 1px solid #fb774e;
+}
+
+.bannerArea {
+  background: url(../images/banner.jpg) no-repeat center center;
+  background-attachment: fixed;
+  min-height: 420px;
+}
+
+.tripArea {
+  margin-top: -220px;
+  margin-bottom: 50px;
+}
+
+.tripArea h2 {
+  font-size: 45px;
+  font-weight: 300;
+  margin-bottom: 35px;
+  color: white;
+}
+
+.tabList {
+  margin: 0 -3px;
+}
+
+.tabList a {
+  border-radius: 0 !important;
+  background: #00000094;
+  color: white;
+  padding: 14px 20px;
+  font-size: 14px;
+  margin: 0 3px !important;
+  border: 0;
+}
+
+.tabList a i {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.tabList a.active, .tabList a:hover {
+  background: #fb774e;
+  text-decoration: none;
+}
+
+.tab-content {
+  background: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  padding: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.tab-content .input-group {
+  margin-bottom: 20px;
+}
+
+.tab-content h4 {
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+.productServices .card {
+  border: none;
+  display: block;
+  text-align: center;
+}
+
+.productServices .card .icon {
+  border: 3px solid #e1e1e1;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 55px;
+  color: #0873c5;
+  display: inline-block;
+}
+
+.productServices .card .card-body h5 {
+  font-size: 22px;
+  padding-top: 5px;
+}
+
+.productServices .card .card-body p {
+  font-size: 13px;
+  line-height: 25px;
+}
+
+.aboutList p {
+  font-size: 13px;
+}
+
+.aboutList ul {
+  margin: 15px 0;
+  padding: 0;
+}
+
+.aboutList ul li {
+  list-style: none;
+  color: #0873c5;
+  font-weight: 700;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.galleryArea {
+  margin-top: -60px;
+}
+
+.galleryArea .arrowSection {
+  float: right;
+}
+
+.galleryArea .arrowSection a {
+  display: inline-block;
+  padding: 2px 10px;
+  background: #0873c5;
+  color: white;
+  margin: 0 -2px;
+  position: relative;
+  opacity: 1;
+  height: auto;
+  width: auto;
+}
+
+.galleryArea .arrowSection a:hover {
+  background: #fb774e;
+}
+
+.galleryArea .carousel-item .row {
+  margin: 0;
+}
+
+.galleryArea .carousel-item .row .col {
+  padding: 0;
+}
+
+.galleryArea .carousel-item .row .col .glry {
+  height: 155px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.galleryArea .carousel-item .row .col .glry img {
+  width: 100%;
+  height: 100%;
+}
+
+.galleryArea .carousel-item .row .col .glry .overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  bottom: 0;
+  z-index: 2;
+  background: #0873c5c4;
+  color: white;
+  padding: 25px;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.galleryArea .carousel-item .row .col .glry .overlay h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.galleryArea .carousel-item .row .col .glry .overlay p {
+  color: white;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.galleryArea .carousel-item .row .col .glry:hover .overlay {
+  top: 0;
+}
+
+.singlePackges {
+  background: #eeeeee;
+  margin-bottom: 30px;
+}
+
+.singlePackges .PackgeThumb {
+  height: 200px;
+}
+
+.singlePackges .PackgeThumb img {
+  width: 100%;
+  height: 100%;
+}
+
+.singlePackges .card-body {
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.singlePackges .card-body h3 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #00213b;
+}
+
+.singlePackges .card-body .meta {
+  color: #7f909d;
+  font-size: 13px;
+}
+
+.singlePackges .card-body .meta i {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.singlePackges .card-body .meta .date {
+  display: inline-block;
+}
+
+.singlePackges .card-body .meta .view {
+  padding: 0 8px;
+  display: inline-block;
+  border-left: 1px solid #7f909d;
+  margin-left: 8px;
+}
+
+.singlePackges .card-bottom {
+  padding: 15px 20px;
+}
+
+.singlePackges .card-bottom .prize {
+  color: #00213b;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.singlePackges .card-bottom .view-card {
+  background: #fb774e;
+  padding: 6px 15px;
+  color: #fffefe;
+  float: right;
+}
+
+.singlePackges .card-bottom .view-card:hover {
+  background-color: #ff4800;
+  text-decoration: none;
+}
+
+footer {
+  background: #264258;
+  padding-top: 50px;
+}
+
+footer .widget {
+  margin-bottom: 40px;
+}
+
+footer .widget h3 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+footer .widget ul {
+  padding: 0;
+}
+
+footer .widget ul li {
+  list-style: none;
+  margin: 8px 0;
+}
+
+footer .widget ul li a {
+  color: white;
+  font-size: 12px;
+}
+
+footer .widget ul.onlineLink {
+  margin: 0 -5px;
+}
+
+footer .widget ul.onlineLink li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+footer .widget ul.onlineLink li a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50px;
+  line-height: 50px;
+  color: #264258;
+  font-size: 25px;
+  text-align: center;
+}
+
+footer .widget ul.onlineLink li a:hover {
+  background: black;
+  color: white;
+}
+
+footer .widget .getInTouch {
+  background: re;
+}
+
+footer .widget .getInTouch .media {
+  margin-bottom: 15px;
+}
+
+footer .widget .getInTouch .media .icon {
+  width: 25px;
+  height: 25px;
+  background: white;
+  border-radius: 50px;
+  line-height: 27px;
+  color: #264258;
+  font-size: 15px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+footer .widget .getInTouch .media .media-body {
+  font-size: 14px;
+  color: white;
+}
+
+footer .widget .getInTouch .media .media-body a {
+  color: #fb774e;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+footer .bottomFooter {
+  background: #35546d;
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  font-size: 13px;
+  color: white;
+}
+
+.filterArea {
+  background: #264258;
+  padding: 0 15px;
+}
+
+.filterArea .filterBox {
+  margin: 0 -15px;
+  padding: 25px 15px;
+  color: white;
+  border-bottom: 1px solid #3a5367;
+}
+
+.filterArea .filterBox .rangerSliderArea .irs--flat .irs-bar {
+  top: 25px;
+  height: 12px;
+  background-color: #fb774e;
+}
+
+.filterArea .filterBox .rangerSliderArea .irs--flat .irs-handle > i:first-child {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  width: 8px;
+  height: 20px;
+  margin-left: -1px;
+  background-color: white;
+}
+
+.filterArea .filterBox .rangerSliderArea .irs--flat .irs-from, .filterArea .filterBox .rangerSliderArea .irs--flat .irs-to, .filterArea .filterBox .rangerSliderArea .irs--flat .irs-single {
+  background: #fb774e;
+}
+
+.filterArea .filterBox .rangerSliderArea .irs--flat .irs-from, .filterArea .filterBox .rangerSliderArea .irs--flat .irs-to, .filterArea .filterBox .rangerSliderArea .irs--flat .irs-single {
+  font-size: 12px;
+  line-height: 10px;
+  padding: 3px 5px;
+}
+
+.filterArea .filterBox .rangerSliderArea .irs--flat .irs-to {
+  margin-left: -5px !important;
+}
+
+.filterArea .filterBox .rangerSliderArea .irs--flat .irs-handle {
+  width: 5px;
+}
+
+.filterArea .filterBox .rangerSliderArea .irs--flat .irs-min, .filterArea .filterBox .rangerSliderArea .irs--flat .irs-max {
+  color: #000;
+  background-color: #ffffff;
+}
+
+.filterArea .filterBox .row {
+  margin: 0;
+}
+
+.filterArea .filterBox .row h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.filterArea .filterBox .row h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.filterArea .filterBox .row a {
+  font-size: 13px;
+  color: white;
+  text-decoration: underline;
+}
+
+.filterArea .filterBox .custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #ffffff;
+  background-color: #264258;
+  border-radius: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.filterArea .filterBox .custom-control-label::after {
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: #264258;
+  border: 1px solid white;
+}
+
+.filterArea .filterBox .custom-control-label::before {
+  top: 0;
+}
+
+.filterArea .filterBox .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background: url(../images/check.png) no-repeat;
+}
+
+.filterArea .filterBox .custom-control-label {
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+.filterArea .filterBox .custom-control {
+  margin: 5px 0;
+}
+
+.filterArea.active {
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100000000;
+  overflow-y: auto;
+}
+
+.filterArea.active .close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 1;
+  margin-left: 8px;
+}
+
+.listingFilter {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.listingFilter select {
+  width: 150px;
+  margin-left: 10px;
+}
+
+.singleList {
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  margin: 10px 0;
+}
+
+.singleList .imageArea {
+  width: 255px;
+}
+
+.singleList .imageArea img {
+  padding: 2px;
+  border: 1px solid #e1e1e1;
+}
+
+.singleList .descriptionArea {
+  padding: 0 8px;
+}
+
+.singleList .descriptionArea h4 {
+  font-size: 18px;
+  color: #264258;
+}
+
+.singleList .descriptionArea .place {
+  font-size: 14px;
+  color: #7f909d;
+  margin-bottom: 10px;
+}
+
+.singleList .descriptionArea p {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.singleList .descriptionArea .pakageMeta h5 {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.singleList .descriptionArea .pakageMeta h5 i {
+  color: #fb774e;
+}
+
+.singleList .descriptionArea .pakageMeta .col-auto, .singleList .descriptionArea .pakageMeta .col {
+  font-size: 12px;
+  color: #7f909d;
+}
+
+.singleList .descriptionArea .pakageMeta .col-auto strong, .singleList .descriptionArea .pakageMeta .col strong {
+  color: #333c44;
+  font-weight: 600;
+}
+
+.singleList .descriptionArea .pakageMeta .col-auto.start, .singleList .descriptionArea .pakageMeta .col.start {
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+}
+
+.singleList .priceArea {
+  width: 140px;
+}
+
+.singleList .priceArea s {
+  color: #7f909d;
+  font-size: 13px;
+  font-weight: 300;
+  padding-top: 10px;
+  display: block;
+}
+
+.singleList .priceArea h3 {
+  color: #00213b;
+  font-size: 38px;
+  margin: 0;
+  line-height: 34px;
+}
+
+.singleList .priceArea .perRoom {
+  color: #333c44;
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.singleList .priceArea .link {
+  font-size: 13px;
+}
+
+.singleList:hover {
+  border-color: #fb774e;
+}
+
+.singleList .roomList .descriptionArea .tools {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 13px;
+  color: #7f909d;
+}
+
+.singleList .roomList .descriptionArea ul {
+  margin-top: 15px;
+  padding: 0;
+}
+
+.singleList .roomList .descriptionArea ul li {
+  list-style: none;
+  font-size: 15px;
+  color: #36b200;
+}
+
+.singleList .hotelLisst .descriptionArea .tools {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 13px;
+  color: #7f909d;
+  margin-top: 25px;
+}
+
+.singleList .hotelLisst .descriptionArea .place {
+  color: #264258 !important;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.singleList .hotelLisst .priceArea {
+  width: 175px;
+}
+
+.singleList .hotelLisst .priceArea .lastbooking {
+  color: #7f909d;
+  font-size: 12px;
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+
+.flightList .flight {
+  width: 135px;
+  text-align: center;
+  border: 1px solid #e1e1e1;
+}
+
+.flightList .flight .thumb {
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flightList .flight h6 {
+  background: #ededed;
+  padding: 7px 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.flightList .shortDescription hr {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.flightList .shortDescription .air {
+  width: 400px;
+  background: url(../images/arrow-left.png) no-repeat center center;
+}
+
+.flightList .shortDescription .air .media {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flightList .shortDescription .air .media .media-body {
+  margin-left: 10px;
+}
+
+.flightList .shortDescription .air .media .media-body h5 {
+  color: #7f909d;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.flightList .shortDescription .air .media .media-body p {
+  color: #00213b;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.flightList .shortDescription .time p {
+  color: #7f909d;
+  margin: 0;
+  font-size: 14px;
+}
+
+.bustList p {
+  margin-bottom: 0;
+  color: #7f909d;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.bustList .place h5 {
+  color: #264258;
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.bustList .place h6 {
+  margin-top: 10px;
+  color: #7f909d;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.bustList .travelName h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #264258;
+  margin-top: 10px;
+}
+
+.bustList .travelName p.orcl {
+  color: #fb774e !important;
+  margin-top: 10px;
+}
+
+.bookingSummery h6 {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.bookingSummery h3 {
+  font-size: 16px;
+  color: #00213b;
+  font-weight: 400;
+}
+
+.bookingSummery .fareSummery .d-flex {
+  font-size: 14px;
+  color: #7f909d;
+  margin: 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bookingSummery .fareSummery .d-flex .coupon {
+  width: 180px;
+}
+
+.bookingSummery .fareSummery .d-flex .coupon.d-flex {
+  margin: 0;
+}
+
+.bookingSummery .card-footer {
+  font-weight: 900;
+  color: #00213b;
+  font-size: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.acessWrap {
+  padding: 80px 0;
+  background: url(../images/banner.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.acessWrap .registerLeft {
+  background: black;
+  height: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.acessWrap .registerLeft .text-area h5 {
+  font-weight: 300;
+  font-size: 25px;
+  color: #0873c5;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  line-height: 40px;
+}
+
+.acessWrap .registerLeft .text-area h5 strong {
+  font-weight: 800;
+  font-size: 55px;
+  display: block;
+  color: #fb774e;
+}
+
+.acessWrap .registerLeft .text-area p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.acessWrap .col-md-4, .acessWrap .col-md-8 {
+  padding: 0;
+}
+
+.acessWrap .card {
+  margin-bottom: 0;
+}
+
+.acessWrap .subTitle {
+  font-size: 35px;
+}
+
+.acessWrap .list-group a.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0;
+  background-color: #fb774e;
+  border: 0;
+  color: white;
+  margin: 0 5px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 13px;
+}
+
+.acessWrap .list-group a.list-group-item:hover {
+  background: black;
+}
+
+.reviewWrap {
+  margin-top: 25px;
+}
+
+.reviewList {
+  margin-bottom: 15px;
+}
+
+.reviewList .avater {
+  text-align: center;
+}
+
+.reviewList .avater .thumb {
+  border-radius: 50%;
+  border: 1px solid #e1e1e1;
+  background: #ededed;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  color: #b3b3b3;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviewList .avater .thumb i {
+  font-size: 50px;
+}
+
+.reviewList .avater h5 {
+  color: #fb774e;
+  margin: 0;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.reviewList .avater h6 {
+  color: #7f909d;
+  margin: 0;
+  font-size: 12px;
+}
+
+.reviewList h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #264258;
+  margin-top: 12px;
+}
+
+.reviewList h3 span {
+  color: #fb774e;
+  display: inline-block;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.reviewList .date {
+  color: #bfc7ce;
+  font-size: 13px;
+}
+
+.reviewList p {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #7f909d !important;
+  line-height: 22px;
+}
+
+.commentArea {
+  margin-top: 25px;
+}
+
+.comment {
+  background: #f1f1f1;
+}
+
+.accessArea {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.productDetailsWrap {
+  margin-top: 35px;
+}
+
+.productSlide .flexslider {
+  margin: 0;
+}
+
+.productShortDescription h1 {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.productShortDescription .card {
+  margin-bottom: 15px;
+}
+
+.productShortDescription .card ul {
+  margin-bottom: 0;
+}
+
+.productShortDescription .priceWrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.productShortDescription .priceWrap s {
+  font-size: 20px;
+  font-weight: 300;
+  color: #fb774e;
+}
+
+.productShortDescription .priceWrap h3 {
+  font-weight: 400;
+  font-size: 51px;
+  color: #264258;
+}
+
+.productShortDescription .priceWrap p {
+  color: #264258;
+  font-size: 13px;
+}
+
+.productShortDescription .assistance h3 {
+  font-size: 26px;
+  color: #264258;
+}
+
+.productShortDescription .assistance h3 i {
+  background: #7f909d;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  color: white;
+  margin-right: 10px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.productShortDescription .assistance p {
+  color: #7f909d;
+}
+
+.productShortDescription .assistance a {
+  font-size: 26px;
+}
+
+.productShortDescription .meta {
+  font-size: 12px;
+  color: #fb774e;
+  padding-bottom: 15px;
+}
+
+.productShortDescription .meta.gray {
+  color: #333c44;
+}
+
+.productShortDescription .tools {
+  padding: 15px 5px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 18px;
+  color: #7f909d;
+}
+
+.productShortDescription .tools i {
+  display: inline-block;
+  padding-left: 15px;
+}
+
+.productShortDescription .wonderful {
+  margin-top: 30px;
+}
+
+.productShortDescription .wonderful h3 {
+  font-size: 26px;
+  color: #36b200;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.productShortDescription .wonderful h5 {
+  font-size: 26px;
+  margin-bottom: 0;
+}
+
+.productShortDescription .wonderful p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.productShortDescription .addReview {
+  color: #264258;
+  font-size: 16px;
+  margin: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 25px;
+  padding-top: 0;
+}
+
+.productShortDescription .addReview a {
+  color: #7f909d;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.itineraryList .card-header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #264258 !important;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.itineraryList .card-header span {
+  color: #fb774e;
+  font-weight: 900;
+}
+
+.itineraryList .hotelName {
+  width: 130px;
+  border: 1px solid #e1e1e1;
+  text-align: center;
+}
+
+.itineraryList .hotelName .thumb {
+  min-height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0873c5;
+  font-size: 45px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.itineraryList .hotelName .name {
+  padding: 8px 5px;
+  background: #ededed;
+}
+
+.itineraryList .hotelName .name h6 {
+  margin: 0;
+  font-size: 13px;
+}
+
+.itineraryList .hotelImage {
+  max-width: 180px;
+  margin-left: -15px;
+  margin-right: 15px;
+  padding: 2px;
+  border: 1px solid #e1e1e1;
+}
+
+.itineraryList p {
+  color: #7f909d !important;
+  font-size: 12px;
+}
+
+.productSidebar {
+  border: 1px solid #e1e1e1;
+}
+
+.productSidebar h4 {
+  color: #264258;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px;
+  margin-bottom: -15px;
+}
+
+.productSidebar .media {
+  padding: 15px;
+  border-bottom: 1px solid #e1e1e1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productSidebar .media .thumb {
+  width: 90px;
+  height: 65px;
+  margin-right: 10px;
+}
+
+.productSidebar .media .media-body h5 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.productSidebar .media .media-body h5 a {
+  color: #264258;
+}
+
+.productSidebar .media .media-body p {
+  color: #7f909d;
+  font-size: 14px;
+  margin: 0;
+}
+
+.productSidebar .media .media-body .price {
+  font-size: 14px;
+  color: #7f909d;
+}
+
+.productSidebar .media .media-body .price span {
+  color: #fb774e;
+  font-weight: 900;
+}
+
+.productDetailsTab {
+  margin-bottom: 35px;
+}
+
+.productDetailsTab .list-group {
+  border-bottom: 1px solid #e1e1e1;
+  border-radius: 0;
+  padding: 18px 0;
+  margin-bottom: 25px;
+}
+
+.productDetailsTab .list-group a {
+  border-radius: 0;
+  background: white;
+  font-size: 18px;
+  border: 0;
+  color: #7f909d;
+  padding: 0 1rem;
+  border-right: 1px solid #7f909d;
+  line-height: 20px;
+}
+
+.productDetailsTab .list-group a.active, .productDetailsTab .list-group a:hover {
+  background: white;
+  color: #fb774e;
+  text-decoration: none;
+  margin-left: 0 !important;
+}
+
+.productDetailsTab .list-group a:last-child {
+  border: 0;
+}
+
+.productDetailsTab .tab-content {
+  border: 0;
+  padding: 0;
+  background: white;
+}
+
+.hotelInformation ul {
+  margin: 0;
+}
+
+.hotelInformation ul li {
+  width: 30%;
+  border-bottom: 1px solid #e1e1e1;
+  background: none !important;
+  display: inline-block;
+  margin: 5px 10px !important;
+  color: #264258 !important;
+  font-size: 14px !important;
+  padding: 5px 0 !important;
+}
+
+.hotelInformation ul li i {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.hotelPolice {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.hotelPolice dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.hotelPolice dl dt {
+  min-width: 150px;
+  font-size: 14px;
+}
+
+.hotelPolice dl dd {
+  font-size: 14px;
+  color: #7f909d;
+}
+
+.seat {
+  margin: 0;
+  background: #eeeeee;
+  margin-top: 40px;
+  padding: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.seat .border-right {
+  border-right: 1px solid #96acc1 !important;
+}
+
+.seat h6 {
+  font-size: 14px;
+}
+
+.seat p {
+  color: #7f909d !important;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.flightListSidebar {
+  border: 1px solid #e1e1e1;
+  margin: 0 -10px;
+  padding: 10px 15px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
+
+.flightListSidebar h6 {
+  font-weight: 900;
+  font-size: 12px;
+  margin-bottom: 15px;
+  color: #264258;
+}
+
+.flightListSidebar h5 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #7f909d;
+  margin: 0;
+}
+
+.flightListSidebar p {
+  font-weight: 600;
+  font-size: 11px !important;
+  margin-bottom: 0;
+}
+
+.flightListSidebar .col {
+  padding: 0 5px;
+}
+
+.flightListSidebar .col h6 {
+  font-size: 11px;
+  color: #7f909d;
+  font-weight: 400;
+  margin: 0;
+}
+
+.flightListSidebar .flight {
+  width: 80px;
+  text-align: center;
+}
+
+.flightListSidebar .flight h6 {
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.flightListSidebar .flightChange {
+  background: #f2f2f2;
+  border: 1px solid #e1e1e1;
+  padding: 6px 10px;
+  position: relative;
+  margin-right: -15px;
+  z-index: 10;
+  font-size: 11px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.flightListSidebar .flightChange:before {
+  left: -16px;
+  right: -16px;
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: #f2f2f2;
+  top: 50%;
+  z-index: -1;
+}
+
+.flightAccess {
+  text-align: center;
+  border: 0;
+}
+
+.flightAccess h5 {
+  font-size: 18px;
+  color: #264258;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.flightAccess .or {
+  height: 100%;
+  width: 1px;
+  background: #e1e1e1;
+  display: inline-block;
+}
+
+.flightAccess .or span {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  display: inline-block;
+  color: white;
+  background: #0873c5;
+  top: 35%;
+  margin-left: -19px;
+}
+
+.aboutus .Aboutimg {
+  width: 265px;
+  margin: 0 20px 10px 0;
+  display: inline-block;
+  float: left;
+}
+
+.aboutus p {
+  color: #7f909d;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.aboutus ul {
+  padding: 0;
+  margin: 40px 0;
+}
+
+.aboutus ul li {
+  list-style: none;
+  width: 49%;
+  display: inline-block;
+  margin: 5px 0;
+  color: #0873c5;
+}
+
+.aboutus ul li i {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.Choose {
+  margin-bottom: 25px;
+}
+
+.Choose .thumb {
+  margin-right: 15px;
+  font-size: 40px;
+  background: #fb774e;
+  color: #fff;
+  border-radius: 200px;
+  width: 85px;
+  height: 85px;
+  text-align: center;
+  line-height: 85px;
+  margin-right: 20px;
+}
+
+.Choose h5 {
+  font-size: 21px;
+  font-weight: 500;
+  color: #0873c5;
+}
+
+.Choose p {
+  font-size: 13px;
+  color: #515151;
+}
+
+.teamSlider .flex-direction-nav a {
+  top: 33%;
+}
+
+.teamSlider .flexslider ul li .card-title {
+  color: #334878;
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.teamSlider .flexslider ul li p {
+  color: #334878;
+}
+
+.teamSlider .flexslider ul li .teamThumb {
+  position: relative;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.teamSlider .flexslider ul li .teamThumb .thumbOverlay {
+  position: absolute;
+  left: 0;
+  top: 120%;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #0873c5;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.teamSlider .flexslider ul li .teamThumb .thumbOverlay ul {
+  padding: 0;
+  margin: 0;
+}
+
+.teamSlider .flexslider ul li .teamThumb .thumbOverlay ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 2px;
+}
+
+.teamSlider .flexslider ul li .teamThumb .thumbOverlay ul li a {
+  width: 30px;
+  color: white;
+  background: #fb774e;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.teamSlider .flexslider ul li .teamThumb .thumbOverlay ul li a:hover {
+  background: black;
+}
+
+.teamSlider .flexslider ul li .teamThumb:hover .thumbOverlay {
+  top: 0;
+}
+
+.singlePost {
+  margin-bottom: 50px;
+}
+
+.singlePost .post-body {
+  margin-top: 20px;
+}
+
+.singlePost .post-body h4 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.singlePost .post-body .meta {
+  font-size: 14px;
+  color: #7f909d;
+  margin-bottom: 25px;
+}
+
+.singlePost .post-body .meta i {
+  color: #0873c5;
+}
+
+.singlePost .post-body p {
+  font-size: 13px;
+  color: #7f909d;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+
+.sidebar .widget {
+  margin-bottom: 40px;
+}
+
+.sidebar .widget h4 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #264258;
+}
+
+.sidebar .widget ul {
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .widget ul li {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 8px 0;
+}
+
+.sidebar .widget ul li a {
+  color: #858383;
+}
+
+.sidebar .widget ul.tags li {
+  display: inline-block;
+  padding: 2px 5px;
+  margin: 0;
+}
+
+.sidebar .widget ul.tags li a {
+  color: #0873c5;
+}
+
+.sidebar .widget.twitter .media {
+  padding: 15px 0;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.sidebar .widget.twitter .media .fab {
+  font-size: 25px;
+  background: #ffffff;
+  padding: 13px;
+  margin: 5px;
+  color: #fb774e;
+  border-radius: 50px;
+  border: 1px solid #fb774e;
+  margin-right: 15px;
+}
+
+.sidebar .widget.twitter .media time {
+  margin-top: 20px;
+  color: #858383;
+  font-size: 13px;
+}
+
+.sidebar .widget.twitter .media p {
+  font-size: 13px;
+}
+
+.comments .avater {
+  width: 100px;
+  margin-right: 30px;
+}
+
+.comments h4 {
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  color: #00213b !important;
+}
+
+.comments h4 time {
+  font-size: 12px;
+  color: #7f909d;
+  font-weight: 400;
+  padding-left: 15px;
+}
+
+.comments p {
+  font-size: 14px;
+  color: #7f909d !important;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+}
+
+.comments a {
+  font-size: 14px;
+  float: right;
+  margin-bottom: -10px;
+}
+
+.comments.child {
+  margin-left: 125px;
+  margin-bottom: 25px;
+}
+
+.address address {
+  margin-bottom: 30px;
+  color: #7f909d;
+  font-size: 16px;
+}
+
+.address address strong {
+  display: block;
+  color: #00213b;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.address address a {
+  color: #fb774e;
+}
+
+.errorPage {
+  background: #000000;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  padding: 0 15px;
+}
+
+.errorPage .inner {
+  display: inline-block;
+  max-width: 700px;
+  text-align: center;
+}
+
+.errorPage .inner h3 {
+  margin: 25px 0;
+  font-weight: 400;
+  font-size: 52px;
+}
+
+.errorPage .inner p {
+  color: white;
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 1366px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .singlePackges .card-body {
+    padding: 20px 10px;
+  }
+  .singlePackges .card-body .meta .view {
+    padding: 0 5px;
+    margin-left: 2px;
+  }
+  .singlePackges .card-bottom {
+    padding: 15px 10px;
+  }
+  .singlePackges .PackgeThumb {
+    height: 170px;
+  }
+  .singlePackges .card-body .meta {
+    font-size: 12px;
+  }
+  .singleList .descriptionArea .pakageMeta .col-auto.start {
+    border-right: 0;
+  }
+  .flightList .shortDescription .air {
+    width: 300px;
+  }
+  .singleList .flightList .priceArea {
+    width: 100%;
+    border-top: 1px solid #e1e1e1;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .productShortDescription .wonderful h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .productShortDescription .tools {
+    padding: 5px 5px;
+    font-size: 14px;
+  }
+  .productShortDescription .wonderful {
+    margin-top: 15px;
+  }
+  .productShortDescription .addReview {
+    padding: 5px 0;
+    margin-bottom: 10px;
+  }
+  .productDetailsTab .list-group a {
+    font-size: 14px;
+  }
+  .hotelInformation ul li {
+    width: 45%;
+  }
+  .singleList .imageArea {
+    width: 100%;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: center;
+  }
+  .productDetailsWrap {
+    margin-top: 15px;
+  }
+  .singleList .roomList .priceArea {
+    width: 200px;
+    border-left: 1px solid #e1e1e1;
+  }
+  .itineraryList .align-items-center {
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .flightListSidebar .flight {
+    width: 100%;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .flightListSidebar {
+    margin: 0 -10px;
+    padding: 10px 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+  }
+  .flightListSidebar .col {
+    padding: 0 10px;
+  }
+  .flightListSidebar .flightChange {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 990px) {
+  .navbar-toggler:not(:disabled):not(.disabled) {
+    border: 1px solid #333c44;
+    color: #333c44;
+    padding: 6px 10px 11px 10px;
+  }
+  .navbar-toggler:not(:disabled):not(.disabled):focus {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    border: 0;
+  }
+  header .mainmenu .navbar-collapse .main-nav-link li a {
+    padding: 15px 15px;
+    text-align: center;
+  }
+  header .mainmenu .navbar-collapse .main-nav-link {
+    margin: 0 -15px !important;
+  }
+  .navbar-nav {
+    display: block;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  header .mainmenu .navbar-collapse .social-icon li {
+    display: inline-block;
+  }
+  header .mainmenu .navbar-collapse .main-nav-link li a {
+    padding: 15px;
+    border-bottom: 1px solid #b9b5b5;
+    margin: 0 -15px;
+  }
+  .tripArea {
+    margin-top: -150px;
+  }
+  .aboutList {
+    margin-bottom: 50px;
+  }
+  header .topHeader .navbar-toggler {
+    display: inline-block;
+    padding: 0;
+    border: 0 !important;
+    color: #333c44;
+  }
+  .navbar-collapse {
+    margin: 0 -25px;
+  }
+  .singleList .imageArea {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 0;
+  }
+  .singleList .flightList .flight {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .flightList .flight .thumb {
+    min-height: 110px;
+  }
+  .productShortDescription {
+    margin-top: 25px;
+  }
+  .productSidebar {
+    margin-bottom: 25px;
+  }
+  .hotelSchedule .input-group {
+    margin-bottom: 15px;
+  }
+  .travelName {
+    margin-top: 25px;
+    border-top: 1px solid #e1e1e1;
+    padding-top: 15px;
+  }
+  .flightListSidebar .col {
+    padding: 0 15px;
+  }
+  .comments.child {
+    margin-left: 30px;
+    margin-bottom: 25px;
+  }
+  .comments .avater {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 766px) {
+  .acessWrap .registerLeft {
+    display: none;
+  }
+  .acessWrap {
+    display: block;
+    background: black;
+    padding: 0;
+    height: auto;
+  }
+  .tripArea {
+    margin-top: -400px;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .widget .getInTouch {
+    width: 260px;
+    margin: 0 auto;
+  }
+  .singlePackges .card-body .meta .view {
+    padding: 0 8px;
+    margin-left: 8px;
+  }
+  .tabList {
+    margin: 0 -3px;
+    display: block;
+    text-align: center;
+  }
+  .list-group-horizontal .list-group-item + .list-group-item {
+    border-bottom: 1px solid #635d5d;
+  }
+  .tripArea h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .tab-content {
+    padding: 20px;
+  }
+  .singlePackges .PackgeThumb {
+    height: auto;
+  }
+  .singlePackges .PackgeThumb img {
+    width: 100%;
+    height: auto;
+  }
+  .bannerArea {
+    background-size: cover;
+  }
+  .singleList .priceArea {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #e1e1e1;
+    margin-top: 15px;
+  }
+  .singleList .descriptionArea {
+    text-align: center;
+  }
+  .pagination {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .filterArea {
+    display: none;
+  }
+  .flightList .flight {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .flightList {
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+  }
+  .flightList .shortDescription .air {
+    width: 270px;
+  }
+  .productDetailsTab .list-group {
+    display: block;
+  }
+  .productDetailsTab .list-group a {
+    border-right: 0 !important;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #e1e1e1 !important;
+  }
+  .productDetailsTab .list-group {
+    border-bottom: 0;
+  }
+  .singleList .roomList .priceArea {
+    width: 100%;
+    border-left: 0;
+    padding-top: 15px;
+  }
+  .singleList .roomList .descriptionArea .tools .col-auto {
+    width: 100%;
+    padding: 3px 0;
+  }
+  .hotelInformation ul li {
+    width: 100%;
+  }
+  .reviewList .avater .thumb {
+    display: inline-block;
+  }
+  .reviewList .avater {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .reviewList {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .productDetailstitle {
+    text-align: center;
+  }
+  .itineraryList .hotelName {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .itineraryList .media {
+    display: block;
+  }
+  .itineraryList .hotelImage {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 15px;
+  }
+  .productShortDescription .priceWrap .pl-4 {
+    padding-left: 15px !important;
+  }
+  .singleList .bustList .priceArea {
+    margin-top: 25px;
+    padding-top: 15px;
+  }
+  .singleList .bustList .place {
+    margin-top: 15px;
+  }
+  .singleList .hotelLisst .priceArea {
+    width: 100%;
+    padding-top: 15px;
+  }
+  .singleList .hotelLisst .descriptionArea .tools {
+    display: block;
+  }
+  .singleList .hotelLisst .descriptionArea .tools .col-auto {
+    padding: 5px 0;
+  }
+  .flightAccess .or span {
+    top: 30%;
+  }
+  .flightAccess .or {
+    height: 1px;
+    width: 100%;
+    margin: 50px 0;
+  }
+  .comments.child {
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 470px) {
+  .tab-content h4 {
+    font-size: 20px;
+  }
+  .galleryArea {
+    margin-top: -50px;
+  }
+  .galleryArea .carousel-item .row .col .glry {
+    height: 100px;
+  }
+  .galleryArea .carousel-item .row .col .glry .overlay h5 {
+    font-size: 14px;
+  }
+  .galleryArea .carousel-item .row .col .glry .overlay {
+    padding: 10px 15px;
+  }
+  .galleryArea .carousel-item .row .col .glry .overlay p {
+    font-size: 10px;
+  }
+  header .topHeader .navbar-brand {
+    width: 85px;
+  }
+  header .topHeader .pull-right .btn-group .btn {
+    padding: .375rem .2rem;
+  }
+  header .topHeader .navbar-brand {
+    width: 85px;
+  }
+  .titleArea .title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 370px) {
+  header .topHeader .pull-right .btn-group .dropdown-menu.show form {
+    min-width: 200px;
+  }
+  header .topHeader .pull-right .btn-group .dropdown-menu.show form a {
+    font-size: 12px;
+  }
+  header .topHeader .pull-right .btn-group .btn {
+    padding: .375rem .5rem;
+  }
+  .flightList .shortDescription .air {
+    width: 100%;
+    display: block !important;
+    margin: 0 -15px;
+  }
+  .flightList .shortDescription .air .media {
+    margin: 35px 0;
+  }
+  .flightList .shortDescription .time {
+    padding-top: 80px;
+  }
+  .shortDescription {
+    margin: -15px 0;
+  }
+  .flightList {
+    border: 0;
+    padding: 0;
+  }
+  .hotelPolice dl {
+    display: block;
+  }
+  .productShortDescription .meta .gray {
+    margin-top: 10px;
+  }
+  .productShortDescription .assistance h3 {
+    font-size: 20px;
+  }
+  .flightListSidebar .col {
+    padding: 0 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
+/*********************************************************
+			2. PRELOADER
+**********************************************************/
+
+.load-full-screen {
+  height: 100vh;
+  width: 100%;
+}
+
+#loader {
+  position: relative;
+  background: #f7f7f7;
+}
+#loader div {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%,-45%);
+  margin-top: 0 !important;
+}
+#loader span {
+  text-align: center;
+}
+
+/*********************************************************************************
+			34. loading.html CSS Start
+*********************************************************************************/
+.loading-animation {
+  position: relative;
+  height: 100px;
+  margin-top: 40px;
+}
+.loading-animation span  {
+  border-radius: 50%;
+  font-size: 50px;
+  height: 100px;
+  padding: 10px;
+  width: 100px;
+  display: block;
+  position: absolute;
+  left: 42%;
+}
+.loading-animation span:nth-child(1) {
+  opacity: 0;
+  -webkit-animation: loader 2s infinite;
+  animation: loader 2s infinite;
+  color: #fff;
+  background: #f9676b;
+}
+.loading-animation span:nth-child(2) {
+  -webkit-animation: loader 2s infinite 0.5s;
+  animation: loader 2s infinite 0.5s;
+  opacity: 0;
+  color: #fff;
+  background: #F19C4F;
+}
+.loading-animation span:nth-child(3) {
+  animation: loader 2s infinite 1s;
+  -webkit-animation: loader 2s infinite 1s;
+  opacity: 0;
+  color: #fff;
+  background: #00adef;
+}
+.loading-animation span:nth-child(4) {
+  animation: loader 2s infinite 1.5s;
+  -webkit-animation: loader 2s infinite 1.5s;
+  opacity: 0;
+  color: #fff;
+  background: #07253F;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+    -webkit-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  26% {
+    opacity: 0;
+    -webkit-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+}
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+    -webkit-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  26% {
+    opacity: 0;
+    -webkit-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+}
+
+.autocomplete {
+  position: relative;
+}
+
+.autocomplete-results {
+  padding: 0;
+    margin: 0;
+    border: 1px solid #eeeeee;
+    height: 120px;
+    overflow: auto;
+    position: absolute;
+    width: 100%;
+    background: #ddd;
+    z-index: 2;
+    top: 38px
+}
+
+.autocomplete-result {
+  list-style: none;
+  text-align: left;
+  padding: 4px 2px;
+  cursor: pointer;
+}
+
+.autocomplete-result:hover {
+  background-color: #4AAE9B;
+  color: white;
+}

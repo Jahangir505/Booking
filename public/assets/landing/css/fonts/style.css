@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('hinted-GothamPro.eot');
+    src: local('Gotham Pro'), local('GothamPro'),
+        url('hinted-GothamPro.eot?#iefix') format('embedded-opentype'),
+        url('hinted-GothamPro.woff2') format('woff2'),
+        url('hinted-GothamPro.woff') format('woff'),
+        url('hinted-GothamPro.ttf') format('truetype'),
+        url('hinted-GothamPro.svg#GothamPro') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('hinted-GothamPro-Black.eot');
+    src: local('Gotham Pro Black'), local('GothamPro-Black'),
+        url('hinted-GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('hinted-GothamPro-Black.woff2') format('woff2'),
+        url('hinted-GothamPro-Black.woff') format('woff'),
+        url('hinted-GothamPro-Black.ttf') format('truetype'),
+        url('hinted-GothamPro-Black.svg#GothamPro-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('hinted-GothamPro-Medium.eot');
+    src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
+        url('hinted-GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('hinted-GothamPro-Medium.woff2') format('woff2'),
+        url('hinted-GothamPro-Medium.woff') format('woff'),
+        url('hinted-GothamPro-Medium.ttf') format('truetype'),
+        url('hinted-GothamPro-Medium.svg#GothamPro-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('hinted-GothamPro-Light.eot');
+    src: local('Gotham Pro Light'), local('GothamPro-Light'),
+        url('hinted-GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('hinted-GothamPro-Light.woff2') format('woff2'),
+        url('hinted-GothamPro-Light.woff') format('woff'),
+        url('hinted-GothamPro-Light.ttf') format('truetype'),
+        url('hinted-GothamPro-Light.svg#GothamPro-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('hinted-GothamPro-Bold.eot');
+    src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+        url('hinted-GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('hinted-GothamPro-Bold.woff2') format('woff2'),
+        url('hinted-GothamPro-Bold.woff') format('woff'),
+        url('hinted-GothamPro-Bold.ttf') format('truetype'),
+        url('hinted-GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+

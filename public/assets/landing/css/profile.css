@@ -1,0 +1,462 @@
+/*********************************************************************************
+				user-profile.html CSS Start
+*********************************************************************************/
+.nav {
+    display: block;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+    display: table;
+    content: " ";
+}
+
+.btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after {
+    clear: both;
+}
+
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+    display: table;
+    content: " ";
+}
+
+.tab-content {
+    border:none;
+    padding:0;
+}
+
+
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+    float: left;
+}
+
+
+
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+    float: left;
+}
+
+
+.user-profile {
+    padding: 60px 0px;
+    background: #f7f7f7;
+    overflow: hidden;
+}
+.user-profile-tabs {
+    margin-bottom: 40px;
+}
+.user-profile-tabs  i {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.user-profile-tabs .nav-tabs > li {
+    float: none !important;
+    border-bottom: 2px solid #0A3152;
+
+}
+.user-profile-tabs .nav-tabs > li a:hover {
+    border: none;
+    background: #0873c5;
+}
+.user-profile-tabs .nav-tabs > li > a {
+    background: #07253F;
+    border-radius: 0;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.42857;
+    padding: 20px 0;
+    margin-right: 0px;
+    border: none;
+}
+.user-profile .user-name h3 {
+    margin: 0 0 15px;
+}
+.user-profile-tabs .nav-tabs > li.active > a,
+.user-profile-tabs .nav-tabs > li.active > a:focus {
+    background: #0873c5;
+    color: #fff;
+    border: none;
+}
+.user-profile .brief-info {
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 5px #e6e6e6;
+    padding: 15px 15px 0px;
+}
+.user-profile .brief-info img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+.user-profile .brief-info h5 i {
+    margin-right: 10px;
+    color: #0873c5;
+}
+.user-profile .brief-info h3 {
+    margin-top: 0px;
+}
+.user-profile .brief-info-footer {
+    background: #e6e6e6;
+    margin:0px -15px;
+    padding: 10px 15px;
+}
+.user-profile .brief-info-footer a {
+    color: #07253F;
+    margin-right: 10px;
+    font-size: 13px;
+}
+.user-profile .brief-info-footer a:hover {
+    color: #0873c5;
+}
+.user-profile .brief-info-footer a i {
+    margin-right: 5px;
+}
+.most-recent-booking .field-entry .fa-star {
+    color: #F19C4F;
+    margin: 0px;
+}
+.most-recent-booking .field-entry {
+    padding: 15px 15px;
+    overflow: hidden;
+    border-bottom: 1px solid #e6e6e6;
+}
+.most-recent-booking .field-entry p {
+    margin: 0px;
+}
+.most-recent-booking .field-entry p i {
+    margin: 0px 5px;
+}
+.most-recent-booking .field-entry a {
+    color: #0873c5;
+}
+.confirmed {
+    color: #009933;
+}
+.failed {
+    color: #F2676B;
+}
+.most-recent-booking {
+    box-shadow: 0px 0px 5px #e6e6e6;
+    overflow: hidden;
+    margin: 40px 0px;
+    background: #fff;
+}
+.most-recent-booking h4,
+.user-profile-offer h4,
+.user-notification h4,
+.user-personal-info h4,
+.user-change-password h4,
+.user-preference h4 {
+    background: #e6e6e6;
+    margin: 0px;
+    padding: 15px;
+}
+.user-profile-offer {
+    box-shadow: 0px 0px 5px #e6e6e6;
+    overflow: hidden;
+    background: #fff;
+}
+.user-profile-offer .offer-body {
+    padding: 15px 15px 0px;
+    overflow: hidden;
+}
+.user-profile-offer .offer-body .offer-entry {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.user-profile-offer .offer-left {
+    color: #0873c5;
+}
+.user-profile-offer .offer-left p {
+    font-size: 24px;
+    font-weight: 600;
+}
+.user-profile-offer .offer-right p {
+    line-height: 1.6;
+}
+.user-profile-offer .offer-right {
+    border-left: 1px solid #e6e6e6;
+}
+.user-profile-offer .offer-entry a {
+    color: #0873c5;
+    font-weight: 600;
+}
+.user-notification {
+    margin: 40px 0px;
+    background: #fff;
+}
+.user-notification .notification-body {
+    padding: 15px 15px 0px;
+    overflow: hidden;
+}
+.notification-entry  p {
+    margin: 0px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.notification-entry  p i {
+    color: #fff;
+    background: #0873c5;
+    padding: 5px;
+    margin-right: 5px;
+}
+.item-entry {
+    overflow: hidden;
+    margin: 40px 0px;
+}
+.item-entry span {
+    background: #0873c5 none repeat scroll 0 0;
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px 20px;
+    color: #fff;
+}
+.item-content {
+    background: #fff;
+    padding: 15px;
+    overflow: hidden;
+}
+.item-content img {
+    max-width: 100%;
+}
+.item-content h4 {
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.item-content h4  i {
+    color: #F19C4F;
+}
+.item-content p {
+    margin-bottom: 5px;
+    line-height: 2;
+}
+.item-content .confirmed i,
+.item-content .failed i {
+    margin-right: 5px;
+}
+.item-content a {
+    background: #0873c5 none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    padding: 5px 15px;
+}
+.item-body {
+    padding-bottom: 15px;
+    overflow: hidden;
+    border-bottom: 1px solid #e6e6e6;
+}
+.item-footer {
+    padding-top: 10px;
+}
+.item-footer p {
+    margin-bottom: 0px;
+}
+.item-footer a {
+    display: inline-block;
+    color: #0873c5;
+    border: 2px solid #0873c5;
+    background: transparent;
+    margin-left: 30px;
+}
+.item-footer strong {
+    margin: 0px 5px 0px 20px;;
+}
+.completed span {
+    background: #e6e6e6;
+    color: #07253F;
+}
+.user-personal-info,
+.user-change-password,
+.user-preference,
+.card-entry,
+.user-add-card {
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 5px #e6e6e6;
+}
+.user-info-body,
+.change-password-body {
+    padding: 20px 5px;
+    overflow: hidden;
+}
+.user-personal-info label,
+.user-change-password label,
+.user-preference label {
+    font-weight: normal;
+}
+.user-personal-info .form-control,
+.user-change-password .form-control,
+.user-preference .form-control {
+    border-radius: 0px;
+    margin-bottom: 15px;
+    padding: 10px;
+    height: 40px;
+}
+.user-personal-info textarea {
+    height: auto !important;
+}
+.user-personal-info button,
+.user-change-password button,
+.user-preference button,
+.user-add-card button,
+.submit-complaint button {
+    border: 0px;
+    color: #fff;
+    background: #00adef;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.user-change-password button,
+.user-preference button,
+.user-add-card button,
+.submit-complaint button {
+    margin-top: 5px;
+}
+.user-personal-info a {
+    background: #0873c5;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.user-preference {
+    margin: 40px 0px;
+}
+.user-preference .collapse {
+    padding: 20px 5px;
+    overflow: hidden;
+}
+.upload-pic {
+    height: 30px;
+}
+.card-entry {
+    padding: 15px;
+    margin-bottom: 40px;
+}
+.card-entry .pull-right a {
+    margin:0px 5px;
+    color: #07253F;
+    font-size: 20px;
+}
+.card-entry .pull-right a:hover {
+    color: #0873c5;
+}
+.card-entry .card-type {
+    overflow: hidden;
+}
+.card-entry .card-type h3 {
+    margin-top: 0px;
+}
+.card-entry .card-type p {
+    margin: 20px 0px 0px;
+}
+.primary-card span {
+    color: #fff;
+    background: #0873c5;
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+.primary-card h3 {
+    margin-top: 0px;
+}
+.user-add-card {
+    padding: 15px;
+}
+.user-add-card .form-control {
+    border-radius: 0px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.recent-complaint h3 {
+    margin: 30px 0px 40px;
+    position: relative;
+}
+.recent-complaint h3:after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background: #0873c5;
+    position: absolute;
+    top: 115%;
+    left: 0;
+}
+.recent-complaint .nav-tabs > li > a {
+    font-size: 16px;
+    color: #07253F;
+}
+.recent-complaint .tab-content {
+    background: #ffffff;
+    padding: 20px;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+.recent-complaint .tab-content a {
+    color: #07253F;
+}
+.recent-complaint .tab-content a:hover {
+    color: #00adef;
+}
+.recent-complaint .tab-content a span {
+    font-weight: 600;
+}
+.recent-complaint .tab-content  p:nth-child(2n+1) {
+    background: #f7f7f7 none repeat scroll 0 0;
+    margin: 0;
+    padding: 15px;
+}
+.recent-complaint .tab-content  p:nth-child(2n+0) {
+    background: #e6e6e6 none repeat scroll 0 0;
+    margin: 0;
+    padding: 15px;
+}
+.submit-complaint {
+    overflow: hidden;
+    background: #ffffff;
+    padding: 20px 5px;
+}
+.submit-complaint .form-control {
+    border-radius: 0px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.submit-complaint textarea {
+    height: auto !important;
+}
+@media (max-width: 767px) {
+    .item-content img {
+        margin-bottom: 20px;
+    }
+}

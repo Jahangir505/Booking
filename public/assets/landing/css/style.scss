@@ -1,0 +1,2380 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+$orange: #2b1b62;
+$blue: #37bbef;
+
+$black: #333c44;
+$colorBlack: #00213b;
+$borderColor: #e1e1e1;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    h1, h2, h4, h5, h6, p{
+        font-family: 'Roboto', sans-serif;
+    }
+    img{
+        max-width: 100%;
+    }
+    p{
+        color: #7f909d;
+    }
+}
+
+.btn{
+    border-radius: 0;
+}
+.gray{
+    color: #7f909d !important;
+}
+
+.orcl{
+    color: $orange;
+}
+
+.btn-tvl{
+    background: $blue;
+    border: 0;
+    border: 1px solid $blue;
+    border-radius: 0;
+    color: white;
+    &:hover{
+        background: #085c9c;
+        color: white;
+    }
+}
+
+.btn-orange{
+    background: $orange;
+    border: 0;
+    border: 1px solid $orange;
+    border-radius: 0;
+    color: white;
+    &:hover{
+        background-color: rgb(255, 72, 0) ;
+        color: white;
+    }
+}
+
+.form-control{
+    border-radius: 0;
+    border-color: #e4e4e4;
+    &:focus{
+        box-shadow: none;
+        border-color: $blue;
+    }
+}
+
+.input-group-text {
+    color: #bfc7ce;
+    background-color: #ffffff;
+    border: 1px solid #e4e4e4;
+    border-radius: 0;
+}
+
+form label {
+    font-size: 14px;
+    color: #41596c;
+    font-weight:600;
+    text-transform: capitalize;
+}
+
+.titleArea{
+    text-align: center;
+    margin-bottom: 55px;
+    .title{
+        font-size:36px;
+        margin-bottom:30px;
+        font-weight: 700;
+    }
+    p{
+        font-size: 20px;
+        color: #7f909d;
+        font-weight: 400;
+    }
+    &.text-light{
+        .title{
+            font-weight: 300;
+            color: $colorBlack !important;
+        }
+    }
+}
+
+.subTitle{
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 26px;
+}
+
+.productDetailstitle{
+    font-size: 22px;
+    font-weight: 900;
+    color: #264258;
+    margin-bottom: 20px;
+}
+
+// breadcome
+.breadcrumb{
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+    i{
+        color: #bfc7ce;
+        font-size: 12px;
+    }
+   li{
+       font-size: 13px;
+   }
+   a{
+       display: inline-block;
+       padding-right: 10px;
+       font-weight: 500;
+   }
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    display: none;
+}
+
+.pagination{
+    margin: 25px 0;
+    .page-link {
+        position: relative;
+        display: block;
+        padding: .2rem .4rem;
+        margin-left: -1px;
+        line-height: normal;
+        color: #007bff;
+        background-color: #fff;
+        border: 1px solid white;
+        font-size: 12px;
+        margin: 0 8px;
+    }
+}
+
+.card{
+    border-radius: 0 !important;
+    border:1px solid #e5e9eb;
+    margin-bottom: 35px;
+    .card-header,
+    .card-footer{
+        padding: .4rem 1.25rem;
+        background-color: #efefef;
+        border-color: #e5e9eb;
+        font-size: 18px;
+        font-weight: 400;
+        border-radius: 0 !important;
+        color: $colorBlack !important;
+    }
+
+    .card-body{
+        h4{
+            color: $orange;
+            font-size: 16px;
+            font-weight:400;
+        }
+        p{
+            font-size: 13px;
+            color: $colorBlack;
+        }
+        ul{
+            padding: 0;
+            li{
+                list-style: none;
+                font-size: 13px;
+                color: #7f909d;
+                margin: 8px 0;
+                position: relative;
+                background: url(../images/arrow.png) no-repeat left center;
+                background-size: 7px 12px;
+                padding-left: 14px;
+            }
+        }
+
+        label {
+            font-size: 14px;
+            color: #41596c;
+            font-weight:500;
+        }
+    }
+
+}
+
+// End common css
+
+.form-control.code{
+    width: 80px;
+}
+
+header{
+    border-bottom:3px solid $orange;
+    .topHeader{
+        padding: 10px 0;
+        background: white;
+        .navbar-brand{
+            width: 150px;
+        }
+        .pull-right{
+            .btn-group{
+                border:0;
+                .dropdown-toggle{
+                    border:1px solid #e1e1e1;
+                    position: relative;
+                    z-index: 100000000;
+                    &.active{
+                        border-bottom: 1px solid white;
+                    }
+                }
+                .dropdown-menu.show{
+                    display: block;
+                    top: 120% !important;
+                    left: auto !important;
+                    right: 0;
+                    transform: translate3d(0px, -10px, 0px) !important;
+                    border-radius: 0;
+                    form{
+                        min-width: 330px;
+                        padding: 15px;
+                        h5{
+                            font-size: 18px;
+                            margin-bottom: 15px;
+                        }
+
+                        a{
+                            font-size: 14px;
+                        }
+                        .custom-control-label::before,
+                        .custom-control-label::after{
+                            top: .1rem;
+                        }
+                    }
+                }
+                .dropdown-menu.flag-container {
+                    min-width: auto;
+                    a{
+                        padding: 0 15px;
+                    }
+                } 
+            }
+        }
+        
+        .navbar-toggler {
+            display: none;
+        }
+    }
+    .mainmenu{
+        padding-bottom: 0;
+        padding-top: 0;
+        background: $blue;
+        .navbar-collapse{
+            .main-nav-link{
+                li{
+                    a{
+                        color:white;
+                        font-size: 14px;
+                        font-weight: 400;
+                        padding: 13px 15px;
+                        border-right: 1px solid #53a4dc;
+                        i{
+                            display: inline-block;
+                            margin-right: 10px;
+                        }
+                        &:hover, 
+                        &.active{
+                            color: white;
+                            background: $orange;
+                            border-right: 1px solid $orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bannerArea{
+    
+    background-attachment: fixed;
+    min-height: 420px;
+}
+
+
+// Start Travel form 
+.tripArea{
+    margin-top:-220px;
+    margin-bottom: 50px;
+    h2{
+        font-size: 45px;
+        font-weight: 300;
+        margin-bottom: 35px;
+        color: white;
+    }
+}
+
+.tabList{
+    margin: 0 -3px;
+    a{
+        border-radius: 0 !important;
+        background: #00000094;
+        color: white;
+        padding:14px 20px;
+        font-size: 14px;
+        margin: 0 3px !important;
+        border: 0;
+        i{
+            display: inline-block;
+            margin-right: 8px;
+        }
+        &.active,
+        &:hover{
+            background: $orange;
+            text-decoration: none;
+        }
+    }
+}
+
+.tab-content{
+    background: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+    .input-group{
+        margin-bottom: 20px;
+    }
+    h4{
+        font-size: 26px;
+        font-weight: 300;
+        margin-bottom:25px;
+        text-transform: capitalize;
+
+    }
+}
+
+// Start Welcome Area
+.productServices {
+    .card{
+        border: none;
+        display: block;
+        text-align: center;
+        .icon{
+            border: 3px solid $borderColor;
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            text-align: center;
+            border-radius: 50%;
+            font-size:55px;
+            color: $blue;
+            display: inline-block;
+        }
+        .card-body{
+            h5{
+                font-size: 22px;
+                padding-top: 5px;
+            }
+            p{
+                font-size: 13px;
+                line-height: 25px;
+            }
+        }
+    }
+    
+}
+
+// Home About
+.aboutList{
+    p{
+        font-size: 13px;
+    }
+    ul{
+        margin: 15px 0;
+        padding: 0;
+        li{
+            list-style: none;
+            color: #0873c5;
+            font-weight: 700;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+    }
+}
+
+// gllery sectioin 
+
+.galleryArea{
+    margin-top:-60px;
+    .arrowSection{
+        float: right;
+        a{
+            display: inline-block;
+            padding: 2px 10px;
+            background:$blue;
+            color: white;
+            margin: 0 -2px;
+            position: relative;
+            opacity: 1;
+            height: auto;
+            width: auto;
+            &:hover{
+                background:$orange ;
+            }
+        }
+    }
+
+    .carousel-item{
+        .row{
+            margin: 0;
+            .col{
+                padding: 0;
+                .glry{
+                    height: 155px;
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .overlay{
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top:100%;
+                        bottom: 0;
+                        z-index: 2;
+                        background: #0873c5c4;
+                        color: white;
+                        padding: 25px;
+                        -webkit-transition: all .5s linear;
+                        -moz-transition: all .5s linear;
+                        transition: all .5s linear;
+                        h5{
+                            font-size: 20px;
+                            font-weight: 500;
+                        }
+                        p{
+                            color: white;;
+                            font-weight: 300;
+                            font-size: 15px;
+                        }
+                    }
+                    &:hover .overlay{
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.singlePackges{
+    background: #eeeeee;
+    margin-bottom: 30px;
+    .PackgeThumb{
+        height:200px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .card-body{
+        padding: 20px;
+        border-bottom: 1px solid #e0e0e0;
+        h3{
+            font-weight: 500;
+            font-size: 18px;
+            color: #00213b;
+        }
+        .meta{
+            color: #7f909d;
+            font-size: 13px;
+            i{
+                display: inline-block;
+                margin-right:5px;
+            }
+            .date{
+                display: inline-block;
+            }
+            .view{
+                padding: 0 8px;
+                display: inline-block;
+                border-left: 1px solid #7f909d;
+                margin-left: 8px;
+            }
+        }
+    }
+    .card-bottom{
+        padding: 15px 20px;
+        .prize{
+            color:#00213b;
+            font-size: 25px;
+            font-weight: 800;
+        }
+        .view-card{
+            background: $orange;
+            padding: 6px 15px;
+            color: rgb(255, 254, 254);
+            float: right;
+            &:hover{
+                background-color: rgb(255, 72, 0) ;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+footer{
+    background: #264258;
+    padding-top:50px;
+    .widget{
+        margin-bottom:40px;
+        h3{
+            font-size: 24px;
+            color: white;
+            margin-bottom: 25px;
+        }
+        ul{
+            padding: 0;
+            li{
+                list-style: none;
+                margin:8px 0;
+                a{
+                    color: white;
+                    font-size: 12px;
+                }
+            }
+
+            &.onlineLink{
+                margin: 0 -5px;
+                li{
+                    display: inline-block;
+                    margin: 0 5px;
+                    a{
+                        display: inline-block;
+                        width: 50px;
+                        height: 50px;
+                        background: white;
+                        border-radius: 50px;
+                        line-height:50px;
+                        color: #264258;
+                        font-size: 25px;
+                        text-align: center;
+                        &:hover{
+                            background:black;
+                            color:white;
+                        }
+                    }
+                }
+            }
+        }
+        .getInTouch{
+            background: re;
+            .media{
+                margin-bottom: 15px;
+                .icon{
+                    width: 25px;
+                    height: 25px;
+                    background: white;
+                    border-radius: 50px;
+                    line-height: 27px;
+                    color: #264258;
+                    font-size: 15px;
+                    margin-right: 15px;
+                    text-align: center;
+                }
+                .media-body{
+                    font-size: 14px;
+                    color: white;
+                    a{
+                        color: $orange;
+                        display: inline-block;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottomFooter{
+        background: #35546d;
+        text-align: center;
+        margin-top:40px;
+        padding:20px 0;
+        font-size: 13px;
+        color: white;
+    }
+}
+
+// Start Holiday Listing css 
+.filterArea{
+    background: #264258;
+    padding:0 15px;
+    .filterBox{
+        margin:0 -15px;
+        padding:25px 15px;
+        color: white;
+        border-bottom: 1px solid #3a5367;
+        
+        .rangerSliderArea{
+            .irs--flat .irs-bar {
+                top: 25px;
+                height: 12px;
+                background-color:$orange;
+            }
+
+            .irs--flat .irs-handle>i:first-child {
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 50%;
+                width: 8px;
+                height: 20px;
+                margin-left: -1px;
+                background-color:white;
+            }
+
+            .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single{
+                background: $orange;
+            }
+
+            .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+                font-size: 12px;
+                line-height: 10px;
+                padding: 3px 5px;
+            }
+
+            .irs--flat .irs-to{
+                margin-left: -5px !important;
+            }
+
+            .irs--flat .irs-handle {
+                width:5px;
+            }
+            .irs--flat .irs-min, .irs--flat .irs-max {
+                color: #000;
+                background-color: #ffffff;
+            }
+        }
+        .row{
+            margin: 0;
+            h3{
+                font-size: 20px;
+                font-weight: 400;
+                margin-bottom: 0;
+            }
+            h4{
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+
+            a{
+                font-size: 13px;
+                color: white;
+                text-decoration: underline;
+            }
+        }
+
+        .custom-control-input:checked~.custom-control-label::before {
+            color: #fff;
+            border-color: #ffffff;
+            background-color: #264258;
+            border-radius: 0;
+            width: 20px;
+            height: 20px;
+        }
+
+        .custom-control-label::after {
+            top: 0;
+            width: 20px;
+             height: 20px;
+            background: #264258;
+            border: 1px solid white;
+        }
+
+        .custom-control-label::before{
+            top: 0;
+            
+        }
+        .custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+            // background: white;
+            background: url(../images/check.png) no-repeat;
+        }
+
+        .custom-control-label {
+            padding-left: 5px;
+            font-size: 14px;
+        }
+
+        .custom-control {
+            margin: 5px 0;
+        }
+    }
+    &.active{
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 100000000;
+        overflow-y: auto;
+        .close {
+            float: right;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1;
+            color: white;
+            text-shadow: 0 1px 0 #fff;
+            opacity: 1;
+            margin-left: 8px;
+        }
+    }
+}
+
+
+.listingFilter{
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 15px;
+    select{
+        width: 150px;
+        margin-left: 10px;
+    }
+}
+
+
+// Singl List 
+.singleList{
+    padding: 20px;
+    border:1px solid $borderColor;
+    margin: 10px 0;
+    .imageArea{
+        width: 255px;
+        img{
+            padding: 2px;
+            border: 1px solid $borderColor;
+        }
+    }
+    .descriptionArea{
+        padding: 0 8px;
+        h4{
+            font-size: 18px;
+            color: #264258;
+        }
+        .place{
+            font-size: 14px;
+            color: #7f909d;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+        .pakageMeta{
+            h5{
+                font-size: 13px;
+                font-weight:400;
+                margin-bottom:15px;
+                i{
+                    color: $orange;
+                }
+            }
+            .col-auto, .col{
+                font-size: 12px;
+                color: #7f909d;
+                strong{
+                    color: $black;
+                    font-weight: 600;
+                }
+                &.start{
+                    border-left:1px solid $borderColor;
+                    border-right:1px solid $borderColor;
+                }
+            }
+        }
+    }
+    .priceArea{
+        width: 140px;
+        s{
+            color: #7f909d;
+            font-size: 13px;
+            font-weight: 300;
+            padding-top: 10px;
+            display: block;
+        }
+        h3{
+            color: $colorBlack;
+            font-size: 38px;
+            margin: 0;
+            line-height: 34px;
+        }
+        .perRoom{
+            color:$black;
+            font-size: 13px;
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+        .link{
+            font-size: 13px;
+        }
+    }
+    &:hover{
+        border-color: $orange;
+    }
+
+    .roomList{
+        .descriptionArea{
+            .tools{
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-size: 13px;
+                color: #7f909d;
+            }
+            ul{
+                margin-top: 15px;
+                padding: 0;
+                li{
+                    list-style: none;
+                    font-size: 15px;
+                    color: #36b200;
+                }
+            }
+        }
+    }
+
+    .hotelLisst{
+        .descriptionArea{
+            .tools{
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-size: 13px;
+                color: #7f909d;
+                margin-top:25px;
+            }
+            .place{
+                color: #264258 !important;
+                font-size: 13px;
+                font-weight: 600;
+            }
+        }
+
+        .priceArea{
+            width: 175px;
+            .lastbooking{
+                color: #7f909d;
+                font-size: 12px;
+                margin-top:35px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// Start Holiday payment 
+.flightList{
+    .flight{
+        width: 135px;
+        text-align: center;
+        border: 1px solid $borderColor;
+        .thumb{
+            height:110px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h6{
+            background: #ededed;
+            padding: 7px 0;
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+    }
+    .shortDescription{
+        hr {
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+        .air{
+            width: 400px;
+            background: url(../images/arrow-left.png) no-repeat center center;
+            .media{
+                align-items: center;
+                .media-body{
+                    margin-left: 10px;
+                    h5{
+                        color: #7f909d;
+                        font-weight: 400;
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                    }
+                    p{
+                        color:$colorBlack;
+                        font-weight:600;
+                        font-size: 13px; 
+                        margin-bottom: 0;
+                    }
+                }
+            }  
+        }
+        .time{
+            p{
+                color: #7f909d;
+                margin: 0;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+.bustList{
+    p{
+        margin-bottom: 0;
+        color: #7f909d;
+        font-weight:400;
+        font-size: 14px; 
+    }
+    .place{
+        h5{
+            color: #264258;
+            font-weight: 900;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        h6{
+            margin-top: 10px;
+            color: #7f909d;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        
+    }
+
+    .travelName{
+        h5{
+            font-size: 16px;
+            font-weight: 400;
+            color: #264258;
+            margin-top: 10px;
+        }
+        p.orcl{
+            color: $orange !important;
+            margin-top: 10px;
+        }
+    }
+
+}
+
+
+// Booking Summery
+.bookingSummery{
+   h6{
+       font-weight: 300;
+       font-size: 18px;
+   } 
+
+   h3{
+       font-size: 16px;
+       color: $colorBlack;
+       font-weight: 400;
+   }
+
+   .fareSummery{
+       .d-flex{
+           font-size: 14px;
+           color: #7f909d;
+           margin: 10px 0;
+           align-items: center;
+           .coupon{
+               width: 180px;
+               &.d-flex{
+                   margin: 0;
+               }
+           }
+       }
+   }
+   .card-footer{
+       font-weight: 900;
+       color: $colorBlack;
+       font-size: 16px;
+       padding-top: 15px;
+       padding-bottom: 15px;
+   }
+}
+
+// Register Area
+.acessWrap{
+    padding: 80px 0;
+    background: url(../images/banner.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .registerLeft{
+        background: black;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        .text-area{
+            h5{
+                font-weight: 300;
+                font-size: 25px;
+                color:$blue;
+                margin-bottom: 30px;
+                margin-top: 25px;
+                line-height: 40px;
+             strong{
+                font-weight: 800;
+                font-size:55px;
+                display: block;
+                color: $orange;
+             }   
+            }
+            p{
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+    }
+    .col-md-4, .col-md-8{
+        padding: 0;
+    }
+    .card{
+        margin-bottom: 0;
+    }
+    .subTitle{
+        font-size: 35px;
+    }
+    .list-group{
+        a.list-group-item{
+            position: relative;
+            display: block;
+            padding: 0;
+            background-color:$orange;
+            border: 0;
+            color: white;
+            margin: 0 5px;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 13px;
+            &:hover{
+                background: black;
+            }
+        }
+    }
+}
+
+// Review Area
+.reviewWrap{
+    margin-top:25px;
+}
+
+.reviewList{
+    margin-bottom: 15px;
+    .avater{
+        text-align: center;
+        .thumb{
+            border-radius: 50%;
+            border: 1px solid $borderColor;
+            background: #ededed;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            color: #b3b3b3;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                font-size: 50px;
+            }
+        }
+        h5{
+            color: $orange;
+            margin: 0;
+            font-size: 12px;
+            margin-top:10px;
+        }
+        h6{
+            color: #7f909d;
+            margin: 0;
+            font-size: 12px;
+        }
+    }
+
+    h3{
+        font-size: 18px;
+        font-weight: 500;
+        color: #264258;
+        margin-top:12px;
+        span{
+            color: $orange;
+            display: inline-block;
+            padding-left: 10px;
+            font-size: 15px;
+        }
+    }
+
+    .date{
+        color: #bfc7ce;
+        font-size: 13px;
+    }
+    p{
+        margin-top:15px;
+        margin-bottom:0;
+        font-size: 14px;
+        font-weight: 400;
+        color: #7f909d !important;
+        line-height: 22px;
+    }
+}
+
+// comment Area 
+
+.commentArea{
+    margin-top: 25px;
+}
+
+.comment{
+    background: #f1f1f1;
+}
+
+.accessArea{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productDetailsWrap{
+    margin-top: 35px;
+}
+
+// product slider 
+.productSlide{
+    .flexslider{
+        margin: 0;
+    }
+}
+
+// Product Details
+.productShortDescription{
+    h1{
+        font-size: 26px;
+        font-weight: 300;
+    }
+
+    .card{
+        margin-bottom: 15px;
+        ul{
+            margin-bottom: 0;
+        }
+    }
+    .priceWrap{
+        align-items: center;
+        margin-bottom: 15px;
+        s{
+            font-size: 20px;
+            font-weight: 300;
+            color: $orange;
+        }
+        h3{
+            font-weight: 400;
+            font-size: 51px;
+            color: #264258;
+        }
+        p{
+            color: #264258;
+            font-size: 13px;
+        }
+        
+    }
+
+    .assistance{
+        h3{
+            font-size: 26px;
+            color: #264258;
+            i{
+                background: #7f909d;
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                color: white;
+                margin-right: 10px;
+                line-height: 50px;
+                border-radius: 50%;
+                text-align: center;
+            }
+        }
+
+        p{
+            color: #7f909d;
+        }
+
+        a{
+            font-size: 26px;
+        }
+    }
+
+    .meta{
+        font-size: 12px;
+        color: $orange;
+        padding-bottom:15px;
+        &.gray{
+            color: $black;
+        }
+    }
+
+    .tools{
+        padding:15px 5px;
+        border-top:1px solid $borderColor;
+        border-bottom:1px solid $borderColor;
+        font-size: 18px;
+        color: #7f909d;
+        i{
+            display: inline-block;
+            padding-left: 15px;
+        }
+    }
+
+    .wonderful{
+        margin-top: 30px;
+        h3{
+            font-size: 26px;
+            color: #36b200;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        h5{
+            font-size: 26px;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+    }
+
+    .addReview{
+        color: #264258;
+        font-size: 16px;
+        margin: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid $borderColor;
+        margin-bottom: 25px;
+        padding-top: 0;
+
+        a{
+           color: #7f909d;
+           display: inline-block;
+           margin-left: 15px; 
+        }
+    }
+
+}
+
+// Package Itinerary
+.itineraryList{
+    .card-header{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: #264258 !important;
+        font-size: 15px;
+        font-weight: 600;
+        span{
+            color: $orange;
+            font-weight: 900;
+        }
+
+    }
+    .hotelName{
+        width: 130px;
+        border: 1px solid $borderColor;
+        text-align: center;
+        .thumb{
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            color: #0873c5;
+            font-size: 45px;
+            justify-content: center;
+        }
+        .name{
+            padding: 8px 5px;
+            background: #ededed;
+            h6{
+                margin: 0;
+                font-size: 13px;
+            }
+        }
+    }
+    .hotelImage{
+        max-width: 180px;
+        margin-left: -15px;
+        margin-right: 15px;
+        padding: 2px;
+        border: 1px solid $borderColor;
+    }
+    p{
+        color: #7f909d !important;
+        font-size: 12px;
+    }
+}
+
+
+// Product Sidebar 
+.productSidebar{
+    border: 1px solid $borderColor;
+    h4{
+        color: #264258;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 15px;
+        margin-bottom: -15px;
+    }
+    .media{
+        padding: 15px;
+        border-bottom: 1px solid $borderColor;
+        align-items: center;
+        .thumb{
+            width: 90px;
+            height: 65px;
+            margin-right: 10px;
+        }
+        .media-body{
+            h5{
+                font-size: 14px;
+                margin: 0;
+                a{
+                    color: #264258;
+                }
+            }
+            p{
+                color: #7f909d;
+                font-size: 14px;
+                margin: 0;
+            }
+            .price{
+                font-size: 14px;
+                color: #7f909d;
+                span{
+                    color: $orange;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}
+
+.productDetailsTab{
+    margin-bottom: 35px;
+    .list-group{
+        border-bottom: 1px solid $borderColor;
+        border-radius: 0;
+        padding: 18px 0;
+        margin-bottom: 25px;
+
+        a{
+            border-radius: 0;
+            background: white;
+            font-size: 18px;
+            border: 0;
+            color: #7f909d;
+            padding: 0 1rem;
+            border-right: 1px solid #7f909d;
+            line-height: 20px;
+            &.active,
+            &:hover{
+                background: white;
+                color: $orange;
+                text-decoration: none;
+                margin-left: 0 !important;
+            }
+            &:last-child{
+                border: 0;
+            }
+        }
+    }
+    .tab-content {
+        border: 0;
+        padding: 0;
+        background: white;
+    }
+}
+
+//  HOtel
+.hotelInformation{
+    ul{
+        margin: 0;
+        li{
+            width: 30%;
+            border-bottom: 1px solid #e1e1e1;
+            background: none !important;
+            display: inline-block;
+            margin: 5px 10px !important;
+            color: #264258 !important;
+            font-size: 14px !important;
+            padding: 5px 0 !important;
+            i{
+                display: inline-block;
+                padding-right:5px;
+            }
+        }
+    }
+}
+
+.hotelPolice{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    dl{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        dt{
+            min-width: 150px;
+            font-size: 14px;
+        }
+        dd{
+            font-size: 14px;
+            color: #7f909d;
+        }
+        
+    }
+}
+
+.seat {
+    margin: 0;
+    background: #eeeeee;
+    margin-top: 40px;
+    padding: 15px;
+    width: fit-content;
+    .border-right {
+        border-right: 1px solid #96acc1!important;
+    }
+    h6{
+        font-size: 14px;
+    }
+    p{
+        color: #7f909d !important;
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+}
+
+// Flight List Sidebar 
+.flightListSidebar{
+    border: 1px solid #e1e1e1;
+    margin: 0 -10px;
+    padding: 10px 15px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    h6{
+        font-weight: 900;
+        font-size: 12px;
+        margin-bottom: 15px;
+        color: #264258;
+    }
+    h5{
+        font-weight: 400;
+        font-size: 14px;
+        color: #7f909d;
+        margin: 0;
+    }
+
+    p{
+        font-weight: 600;
+        font-size: 11px !important;
+        margin-bottom: 0;
+    }
+
+    .col{
+        padding: 0 5px;
+        h6{
+            font-size: 11px;
+            color: #7f909d;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+
+    .flight{
+        width: 80px;
+        text-align: center;
+        h6{
+            font-size: 11px;
+            font-weight: 400;
+            margin-top:10px;
+            margin-bottom: 0;
+        }
+    }
+
+    .flightChange{
+        background: #f2f2f2;
+        border: 1px solid $borderColor;
+        padding: 6px 10px;
+        position: relative;
+        margin-right: -15px;
+        z-index: 10;
+        font-size: 11px;
+        text-align: center;
+        font-weight: 600;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        &:before{
+            left: -16px;
+            right: -16px;
+            content: "";
+            position: absolute;
+            height: 2px;
+            background:#f2f2f2;
+            top: 50%;
+            z-index: -1;
+        }
+    }
+}
+
+//  flight Access area 
+.flightAccess{
+    text-align: center;
+    border: 0;
+    h5{
+        font-size: 18px;
+        color: #264258;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .or{
+        height: 100%;
+        width: 1px;
+        background: $borderColor;
+        display: inline-block;
+
+        span{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            line-height: 40px;
+            display: inline-block;
+            color: white;
+            background: #0873c5;
+            top: 35%;
+            margin-left: -19px;
+        }
+    }
+}
+
+.aboutus{
+    .Aboutimg{
+        width: 265px;
+        margin:0 20px 10px 0;
+        display: inline-block;
+        float: left;
+    }
+    p{
+        color: #7f909d;
+        font-size: 13px;
+        line-height: 22px;
+    }
+    ul{
+        padding: 0;
+        margin: 40px 0;
+        li{
+            list-style: none;
+            width: 49%;
+            display: inline-block;
+            margin: 5px 0;
+            color: #0873c5;
+            i{
+                display: inline-block;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.Choose{
+    margin-bottom: 25px;
+    .thumb{
+        margin-right: 15px;
+        font-size: 40px;
+        background: #fb774e;
+        color: #fff;
+        border-radius: 200px;
+        width: 85px;
+        height: 85px;
+        text-align: center;
+        line-height: 85px;
+        margin-right: 20px;
+     }
+
+     h5{
+        font-size: 21px;
+        font-weight:500;
+        color: $blue;
+     }
+     p{
+         font-size: 13px;
+         color: #515151;
+     }
+
+}
+
+.teamSlider{
+    .flex-direction-nav a{
+        top:33%;
+    }
+    .flexslider{
+        ul{
+            li{
+                .card-title{
+                    color: #334878;
+                    font-size: 18px;
+                    font-weight: 900;
+                    margin-bottom: 5px;
+                }
+                p{
+                    color: #334878; 
+                }
+              .teamThumb{
+                  position: relative;
+                  margin-bottom: 15px;
+                  overflow: hidden;
+                
+                  .thumbOverlay{
+                      position: absolute;
+                      left: 0;
+                      top:120%;
+                      right: 0;
+                      bottom: 0;
+                      z-index: 10;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      background: #0873c5;
+                      -webkit-transition: all .5s linear;
+                        -moz-transition: all .5s linear;
+                        transition: all .5s linear;
+                      ul{
+                          padding: 0;
+                          margin: 0;
+                          li{
+                              display: inline-block;
+                              list-style: none;
+                              margin: 0 2px;
+                              a{
+                                width: 30px;
+                                color: white;
+                                background: $orange;
+                                height: 30px;
+                                border-radius: 50%;
+                                display: inline-block;
+                                line-height: 30px;
+                                text-align: center;
+                                font-size: 14px;
+                                &:hover{
+                                    background: black;
+                                }
+                            }
+                          }
+                      }
+                  }
+                  &:hover{
+                    .thumbOverlay{
+                        top: 0;
+                    }
+                  }
+                }
+            }
+        }
+    }
+}
+
+.singlePost{
+    margin-bottom: 50px;
+    .post-body{
+        margin-top:20px;
+        h4{
+            font-size: 30px;
+            font-weight: 300;
+        }
+        .meta{
+            font-size: 14px;
+            color: #7f909d;
+            margin-bottom:25px;
+            i{
+                color: $blue;
+            }
+        }
+        p{
+            font-size: 13px;
+            color: #7f909d;
+            line-height: 22px;
+            margin-bottom:25px;
+        }
+
+    }
+}
+
+.sidebar{
+    .widget{
+        margin-bottom: 40px;
+        h4{
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 15px;
+            color: #264258;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                list-style: none;
+                font-size: 14px;
+                font-weight: 300;
+                margin: 8px 0;
+                a{
+                    color: #858383;
+                }
+            }
+
+            &.tags{
+                li{
+                    display: inline-block;
+                    padding:2px 5px;
+                    margin: 0;
+                    a{
+                        color: $blue;
+                    }
+                }
+            }
+        }
+
+        &.twitter{
+            .media{
+                padding:15px 0;
+                margin-bottom: 5px;
+                border-bottom: 1px solid $borderColor;
+                .fab{
+                    font-size: 25px;
+                    background: #ffffff;
+                    padding: 13px;
+                    margin: 5px;
+                    color: $orange;
+                    border-radius: 50px;
+                    border: 1px solid $orange;
+                    margin-right: 15px;
+                }
+                time{
+                    margin-top: 20px;
+                    color: #858383;
+                    font-size: 13px;
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+.comments{
+    .avater{
+        width: 100px;
+        margin-right:30px;
+    }
+    h4{
+        font-weight: 700 !important;
+        font-size: 14px !important;
+        color: #00213b !important;
+        time{
+            font-size: 12px;
+            color: #7f909d;
+            font-weight: 400;
+            padding-left: 15px;
+        }
+    }
+    p{
+        font-size: 14px;
+        color: #7f909d !important;
+        font-weight: 400;
+        line-height: 22px;
+        margin: 0;
+    }
+
+    a{
+        font-size: 14px;
+        float: right;
+        margin-bottom: -10px;
+    }
+    &.child{
+        margin-left: 125px;
+        margin-bottom: 25px;
+    }
+}
+
+.address{
+    address{
+        margin-bottom:30px;
+        color: #7f909d;
+        font-size: 16px;
+        strong{
+            display: block;
+            color: #00213b;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        a{
+            color: $orange;
+        }
+    }
+}
+
+.errorPage{
+    background: #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 15px;
+    .inner{
+        display: inline-block;
+        max-width: 700px;
+        text-align: center;
+        h3{
+            margin: 25px 0;
+            font-weight: 400;
+            font-size: 52px;
+        }
+        p{
+            color: white;
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (min-width:1366px){
+    .container{
+        max-width: 1200px;
+    }
+}
+
+@media(max-width:1199px){
+
+    .singlePackges .card-body {
+        padding: 20px 10px;
+    }
+
+    .singlePackges .card-body .meta .view {
+        padding: 0 5px;
+        margin-left: 2px;
+    }
+
+    .singlePackges .card-bottom {
+        padding: 15px 10px;
+    }
+
+    .singlePackges .PackgeThumb {
+        height: 170px;
+    }
+
+    .singlePackges .card-body .meta {
+        font-size: 12px;
+    }
+
+    // holiday listing 
+
+    .singleList .descriptionArea .pakageMeta .col-auto.start{
+        border-right: 0;
+    }
+
+    .flightList .shortDescription .air{
+        width: 300px;
+    }
+
+    .singleList .flightList .priceArea {
+        width: 100%;
+        border-top: 1px solid $borderColor;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .productShortDescription .wonderful h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .productShortDescription .tools {
+        padding: 5px 5px;
+        font-size: 14px;
+    }
+
+    .productShortDescription .wonderful {
+        margin-top: 15px;
+    }
+
+    .productShortDescription .addReview {
+        padding: 5px 0;
+        margin-bottom: 10px;
+    }
+
+    .productDetailsTab .list-group a{
+        font-size: 14px;
+    }
+
+    // .roomList .descriptionArea .tools .col-auto {
+    //     border: 0 !important;
+    // }
+    
+    .hotelInformation ul li{
+        width: 45%;
+    }
+
+    .singleList .imageArea {
+        width: 100%;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid $borderColor;
+        text-align: center;
+    }
+
+    .productDetailsWrap {
+        margin-top: 15px;
+    }
+
+    .singleList .roomList .priceArea {
+        width: 200px;
+        border-left: 1px solid $borderColor;
+    }
+
+    .itineraryList .align-items-center{
+        align-items: flex-start!important;
+    }
+
+    .flightListSidebar .flight {
+        width: 100%;
+        border-bottom: 1px solid $borderColor;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .flightListSidebar {
+        margin: 0 -10px;
+        padding: 10px 15px;
+        padding-right: 15px;
+        margin-bottom: 20px;
+    }
+
+    .flightListSidebar .col {
+        padding: 0 10px;
+    }
+
+    .flightListSidebar .flightChange {
+        margin-right: 0;
+    }
+}
+
+@media (max-width:990px){
+    .navbar-toggler:not(:disabled):not(.disabled) {
+        border: 1px solid #333c44;
+        color: #333c44;
+        padding: 6px 10px 11px 10px;
+    }
+
+    .navbar-toggler:not(:disabled):not(.disabled):focus{
+        box-shadow: none !important;
+        border: 0;
+    }
+
+    header .mainmenu .navbar-collapse .main-nav-link li a {
+        padding: 15px 15px;
+        text-align: center;
+    }
+
+    header .mainmenu .navbar-collapse .main-nav-link {
+        margin: 0 -15px !important;
+    }
+
+    .navbar-nav {
+        display: block;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    header .mainmenu .navbar-collapse .social-icon li{
+        display: inline-block;
+    }
+
+    header .mainmenu .navbar-collapse .main-nav-link li a {
+        padding: 15px;
+        border-bottom: 1px solid #b9b5b5;
+        margin: 0 -15px;
+    }
+
+
+    .tripArea {
+        margin-top: -150px;
+    }
+    
+    .aboutList{
+        margin-bottom: 50px;
+    }
+
+    header .topHeader .navbar-toggler {
+        display: inline-block;
+        padding: 0;
+        border: 0 !important;
+        color: #333c44;
+    }
+
+    .navbar-collapse {
+        margin: 0 -25px;
+    }
+
+    .singleList .imageArea {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 0;
+    }
+
+    .singleList .flightList .flight{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .flightList .flight .thumb{
+        min-height: 110px;
+    }
+
+    .productShortDescription{
+        margin-top: 25px;
+    }
+
+    .productSidebar{
+        margin-bottom: 25px;
+    }
+
+    .hotelSchedule .input-group{
+        margin-bottom: 15px;
+    }
+
+    .travelName{
+        margin-top: 25px;
+        border-top: 1px solid $borderColor;
+        padding-top: 15px;
+    }
+    .flightListSidebar .col {
+        padding: 0 15px;
+    }
+
+    .comments.child {
+        margin-left: 30px;
+        margin-bottom: 25px;
+    }
+
+    .comments .avater {
+        margin-right: 15px;
+    }
+}
+
+@media(max-width:766px){
+    .acessWrap .registerLeft{
+        display: none;
+    }
+    .acessWrap{
+        display: block;
+        background: black;
+        padding: 0;
+        height: auto;
+    }
+
+    .tripArea {
+        margin-top:-400px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer .widget .getInTouch {
+        width: 260px;
+        margin: 0 auto;
+    }
+    .singlePackges .card-body .meta .view {
+        padding: 0 8px;
+        margin-left: 8px;
+    }
+
+    .tabList {
+        margin: 0 -3px;
+        display: block;
+        text-align: center;
+    }
+    .list-group-horizontal .list-group-item+.list-group-item {
+        border-bottom: 1px solid #635d5d;
+    }
+
+    .tripArea h2 {
+        font-size: 35px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .tab-content {
+        padding: 20px;
+    }
+
+    .singlePackges .PackgeThumb {
+        height: auto;
+    }
+
+    .singlePackges .PackgeThumb img {
+        width: 100%;
+        height: auto;
+    }
+
+    .bannerArea {
+        background-size: cover;
+    }
+
+    .singleList .priceArea {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid $borderColor;
+        margin-top: 15px;
+    }
+
+    .singleList .descriptionArea {
+        text-align: center;
+    }
+
+    .pagination {
+        justify-content: center !important;
+    }
+
+    .filterArea{
+        display: none;
+    }
+
+    .flightList .flight {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .flightList{
+        border:1px solid $borderColor;
+        padding: 15px;
+    }
+
+    .flightList .shortDescription .air {
+        width: 270px;
+    }
+
+    .productDetailsTab .list-group {
+        display: block;
+    }
+
+    .productDetailsTab .list-group a{
+        border-right: 0 !important;
+        padding: 10px 0;
+        text-align: center;
+        border-bottom: 1px solid $borderColor !important;
+    }
+
+    .productDetailsTab .list-group{
+        border-bottom: 0;
+    }
+
+    .singleList .roomList .priceArea {
+        width: 100%;
+        border-left: 0;
+        padding-top: 15px;
+    }
+
+    .singleList .roomList .descriptionArea .tools .col-auto{
+        width: 100%;
+        padding: 3px 0;
+    }
+
+    .hotelInformation ul li {
+        width: 100%;
+    }
+
+    .reviewList .avater .thumb{
+        display: inline-block;
+    }
+
+    .reviewList .avater{
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $borderColor;
+    }
+
+    .reviewList {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .productDetailstitle{
+        text-align: center;
+    }
+
+    .itineraryList .hotelName {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .itineraryList .media {
+        display: block;
+    }
+
+    .itineraryList .hotelImage {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        border: 1px solid #e1e1e1;
+        margin-bottom: 15px;
+    }
+
+    .productShortDescription .priceWrap .pl-4{
+        padding-left: 15px !important;
+    }
+
+    
+    .singleList .bustList .priceArea{
+        margin-top: 25px;
+        padding-top: 15px;
+    }
+
+    .singleList .bustList .place{
+        margin-top: 15px;
+    }
+
+    .singleList .hotelLisst .priceArea {
+        width: 100%;
+        padding-top: 15px;
+    }
+
+    .singleList .hotelLisst .descriptionArea .tools {
+        display: block;
+    }
+
+    .singleList .hotelLisst .descriptionArea .tools .col-auto{
+        padding: 5px 0;
+    }
+
+    .flightAccess .or span {
+        top: 30%;
+    }
+
+    .flightAccess .or {
+        height: 1px;
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .comments.child {
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+}
+
+@media(max-width:470px){
+    .tab-content h4 {
+        font-size: 20px;
+    }
+
+    .galleryArea {
+        margin-top: -50px;
+    }
+
+    .galleryArea .carousel-item .row .col .glry {
+        height: 100px;
+    }
+
+    .galleryArea .carousel-item .row .col .glry .overlay h5 {
+        font-size: 14px;
+    }
+
+    .galleryArea .carousel-item .row .col .glry .overlay {
+        padding: 10px 15px;
+    }
+    .galleryArea .carousel-item .row .col .glry .overlay p {
+        font-size: 10px;
+    }
+    header .topHeader .navbar-brand {
+        width: 85px;
+    }
+
+    header .topHeader .pull-right .btn-group .btn {
+       padding:.375rem .2rem;
+    }
+
+    header .topHeader .navbar-brand {
+        width: 85px;
+    }
+
+    .titleArea .title {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:370px){
+    header .topHeader .pull-right .btn-group .dropdown-menu.show form {
+        min-width: 200px;
+    }
+    header .topHeader .pull-right .btn-group .dropdown-menu.show form a {
+        font-size: 12px;
+    }
+
+    header .topHeader .pull-right .btn-group .btn {
+        padding: .375rem .5rem;
+    }
+
+    .flightList .shortDescription .air {
+        width: 100%;
+        display: block !important;
+        margin: 0 -15px;
+    }
+
+    .flightList .shortDescription .air .media {
+        margin: 35px 0;
+    }
+
+    .flightList .shortDescription .time{
+        padding-top: 80px;
+    }
+
+    .shortDescription{
+        margin: -15px 0;
+    }
+
+    .flightList {
+        border: 0;
+        padding: 0;
+    }
+
+    .hotelPolice dl{
+        display: block;
+    }
+
+    .productShortDescription .meta .gray{
+        margin-top: 10px;
+    }
+
+    .productShortDescription .assistance h3 {
+        font-size: 20px;
+    }
+
+    .flightListSidebar .col {
+        padding: 0 10px;
+    }
+}
+
